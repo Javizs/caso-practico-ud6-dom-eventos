@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    color: #222222;
+}
+
+.cabecera {
+    background-color: #263238;
+    color: white;
+    padding: 24px 30px;
+    border-bottom: 4px solid #455a64;
+}
+
+.cabecera h1 {
+    margin: 0 0 8px 0;
+    font-size: 28px;
+}
+
+.cabecera p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1050px;
+    margin: 25px auto;
+}
+
+.zona-controles {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: flex-end;
+}
+
+.grupo-control {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.grupo-control label {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+select,
+input {
+    padding: 8px;
+    border: 1px solid #999999;
+    background-color: white;
+    min-width: 210px;
+    font-size: 14px;
+}
+
+.contador-favoritos {
+    background-color: #fff8d5;
+    border: 1px solid #d6b44c;
+    padding: 9px 12px;
+    font-weight: bold;
+    min-width: 135px;
+    text-align: center;
+}
+
+.btn-mostrar-favoritos {
+    padding: 9px 14px;
+    background-color: #2f5f9f;
+    color: white;
+    border: 1px solid #244a7c;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-mostrar-favoritos:hover {
+    background-color: #244a7c;
+}
+
+.lista-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.producto {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #bdbdbd;
+    padding: 16px;
+    min-height: 230px;
+}
+
+.producto h2 {
+    margin-top: 28px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #263238;
+}
+
+.producto p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.categoria {
+    font-weight: bold;
+    color: #555555;
+}
+
+.btn-favorito {
+    margin-top: 10px;
+    width: 100%;
+    padding: 9px;
+    background-color: #3c7a3c;
+    color: white;
+    border: 1px solid #2d5f2d;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-favorito:hover {
+    background-color: #2d5f2d;
+}
+
+.icono-favorito {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    font-size: 24px;
+    color: #777777;
+}
+
+.producto.favorito {
+    border: 2px solid #c28b00;
+    background-color: #fffaf0;
+}
+
+.producto.favorito .icono-favorito {
+    color: #c28b00;
+}
+
+.producto.favorito .btn-favorito {
+    background-color: #a83232;
+    border-color: #7d2525;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensaje-vacio {
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+    color: #555555;
+}

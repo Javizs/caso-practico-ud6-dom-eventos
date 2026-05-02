@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Manipulación del DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <h1>Tienda Online de Tecnología</h1>
+        <p>Productos destacados con filtros, búsqueda en tiempo real y sistema de favoritos.</p>
+    </header>
+
+    <main class="contenedor">
+
+        <section id="zona-controles" class="zona-controles">
+            <!-- Los controles se crean dinámicamente desde JavaScript -->
+        </section>
+
+        <section id="lista-productos" class="lista-productos">
+
+            <article class="producto" data-categoria="moviles">
+                <span class="icono-favorito">♡</span>
+                <h2>Smartphone Galaxy X</h2>
+                <p>Teléfono móvil con pantalla AMOLED, 128 GB de almacenamiento y cámara avanzada.</p>
+                <p class="categoria">Categoría: Móviles</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+            <article class="producto" data-categoria="moviles">
+                <span class="icono-favorito">♡</span>
+                <h2>iPhone Air Mini</h2>
+                <p>Smartphone compacto con gran rendimiento y sistema de cámara dual.</p>
+                <p class="categoria">Categoría: Móviles</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+            <article class="producto" data-categoria="tablets">
+                <span class="icono-favorito">♡</span>
+                <h2>Tablet Pro 11</h2>
+                <p>Tablet ligera con lápiz digital, ideal para estudiar, diseñar y tomar apuntes.</p>
+                <p class="categoria">Categoría: Tablets</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+            <article class="producto" data-categoria="tablets">
+                <span class="icono-favorito">♡</span>
+                <h2>Tablet Media Plus</h2>
+                <p>Dispositivo pensado para ver contenido multimedia, navegar y trabajar en movilidad.</p>
+                <p class="categoria">Categoría: Tablets</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+            <article class="producto" data-categoria="ordenadores">
+                <span class="icono-favorito">♡</span>
+                <h2>Portátil Ryzen Work</h2>
+                <p>Ordenador portátil potente para programación, edición y tareas profesionales.</p>
+                <p class="categoria">Categoría: Ordenadores</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+            <article class="producto" data-categoria="ordenadores">
+                <span class="icono-favorito">♡</span>
+                <h2>PC Sobremesa Gamer</h2>
+                <p>Equipo de sobremesa con tarjeta gráfica dedicada y gran capacidad de ampliación.</p>
+                <p class="categoria">Categoría: Ordenadores</p>
+                <button class="btn-favorito">Añadir a Favoritos</button>
+            </article>
+
+        </section>
+
+        <p id="mensaje-vacio" class="mensaje-vacio oculto">
+            No se han encontrado productos que coincidan con los filtros aplicados.
+        </p>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
